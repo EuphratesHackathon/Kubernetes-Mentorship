@@ -1,0 +1,18 @@
+ Networking
+
+Exercise 3.1: 
+Create Network Policies
+- Create a NetworkPolicy named `allow-frontend` in the `default` namespace that:
+- Allows pods with label `app=frontend` to connect to `productcatalogservice` on port 3550
+- Denies all other access
+
+Exercise 3.2: 
+Ingress Configuration
+- Create an Ingress resource named `store-ingress` that:
+- Exposes the `frontend` service on path `/`
+- Exposes the `recommendationservice` on path `/recommendations`
+
+Exercise 3.3: 
+Service Discovery
+- Create a headless service for the `cartservice`
+- Verify DNS resolution within the cluster
