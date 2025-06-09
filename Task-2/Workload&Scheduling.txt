@@ -1,0 +1,23 @@
+ 2. Workloads & Scheduling
+
+Modify Deployments
+- Add a port specification named `http` exposing port 8080/tcp for the `frontend` container
+- Create a new service named `frontend-svc` exposing the container port `http`
+- Configure the service to expose via NodePort
+
+Exercise 2.2
+Schedule Pods with Node Selectors
+- Schedule a pod named `redis-cache` with image `redis` using node selector `disk=ssd`
+- Schedule a pod named `consul-agent` with image `consul` using node selector `env=prod`
+
+Exercise 2.3
+Multi-container Pods
+- Create a pod named `monitoring` with two containers:
+  - `nginx` (image: nginx)
+  - `consul` (image: consul)
+- Verify both containers are running
+
+
+
+
+
