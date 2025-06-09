@@ -1,0 +1,20 @@
+Storage
+
+Exercise 4.1: 
+Persistent Volumes
+- Create a PersistentVolume named `product-data` with:
+- Capacity: 1Gi
+- Access mode: ReadWriteOnce
+- HostPath: /data/product
+
+Exercise 4.2: 
+Persistent Volume Claims
+- Create a PersistentVolumeClaim named `product-pvc`:
+- Storage class: standard
+- Capacity: 1Gi
+- Modify the `productcatalogservice` to mount this PVC at `/data`
+
+Exercise 4.3: 
+Volume Expansion
+- Expand the `product-pvc` to 2Gi
+- Verify the filesystem has resized
