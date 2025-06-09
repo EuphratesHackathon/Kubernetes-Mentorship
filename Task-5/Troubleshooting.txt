@@ -1,0 +1,17 @@
+ Troubleshooting
+
+Exercise 6.1
+Pod Failure
+- Simulate a failing pod (frontend)
+- Use logs, describe, and exec to diagnose
+- Fix the issue (e.g., misconfigured environment variable)
+
+Exercise 6.2
+Network Connectivity
+- Simulate network connectivity issues between services
+- Use network policy and service endpoints to diagnose
+
+Exercise 6.3 
+Resource Constraints
+- Identify pods with high CPU usage using metrics
+- Apply resource limits and requests to optimize
