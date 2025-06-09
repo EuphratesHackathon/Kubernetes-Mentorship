@@ -1,0 +1,19 @@
+
+ 1. Basic Concepts
+
+Exercise 1.1
+Deploy the microservices-demo
+- Clone the microservices-demo repository
+- Deploy all microservices using the provided manifests
+- Verify all pods are running with `kubectl get pods`
+
+Exercise 1.2 
+Create Namespaces
+- Create namespaces: `development`, `staging`, and `production`
+- Deploy the frontend service to the `development` namespace
+
+Exercise 1.3 
+Scale Deployments
+- Scale the `frontend` deployment to 3 replicas
+- Scale the `productcatalogservice` deployment to 2 replicas
+
